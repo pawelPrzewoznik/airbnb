@@ -1,0 +1,416 @@
+/* media query ne fonctionnant pas */
+@media only screen and (max-width:480px) {
+  html,body {
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+  }
+  nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(1,1fr));
+    grid-auto-rows: minmax(2px,auto);
+    grid-gap: 0%;
+  }
+  .header{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+  .gauche{
+    grid-column: 1;
+    grid-row: 2;
+    padding: 1% 5%;
+  }
+  .droite{
+    grid-column: 1;
+    grid-row: 3;
+    padding: 1% 5%;
+  }
+  form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: minmax(0 ,auto);
+  }
+  #un{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #deuxUn{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #troisUn{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #deuxDeux{
+    grid-column: 1;
+    grid-row: 4;
+  }
+  #troisDeux{
+    grid-column: 1;
+    grid-row: 5;
+  }
+  #deuxTrois{
+    grid-column: 1;
+    grid-row: 6;
+  }
+  #troisTrois{
+    grid-column: 1;
+    grid-row: 7;
+  }
+  #troisQuatre{
+    grid-column: 1;
+    grid-row: 8;
+  }
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(1,1fr));
+  grid-auto-rows: minmax(0,auto);
+  grid-gap: 2%;
+  margin:0;
+  padding: 0;
+  color: rgb(72, 72, 72);
+  object-fit: cover;
+}
+h3{
+  font-size: 24px !important;
+  font-weight: 800 !important;
+}
+#imageHaut{
+  width: 30px;
+  height: 35px;
+  top: 3%;
+  left: 2%;
+  position: absolute;
+}
+/* header du site */
+nav{
+  background-image: url("images/header.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(2,1fr));
+  grid-auto-rows: minmax(0,auto);
+  grid-gap: 5%;
+
+}
+.flex{
+  display: flex;
+}
+.header{
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.gauche{
+  grid-column: 1;
+  grid-row: 2;
+  padding:12px 145px;
+  text-align: center;
+  border-radius: 5px;
+  border:none;
+  font-weight: bold;
+  font-size: 16px;
+  margin:2%;
+}
+.droite{
+  grid-column: 2;
+  grid-row: 2;
+  padding:10px 150px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left :4%;
+  margin-top: 2%;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.bouton{
+  font-size: 16px;
+}
+label{
+  margin-left: 1%;
+}
+/* main body */
+
+/* formulaire */
+form{
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 17%;
+  margin-right: 17%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: minmax(0 ,auto);
+  grid-row-gap: 0%;
+}
+form h5{
+  margin: 5px 10px 5px 0;
+}
+form input{
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+form button{
+  background-color: #F25764;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding:15px 16px;
+}
+#un{
+  grid-column: 1/3;
+  grid-row: 1;
+}
+#deuxUn{
+  grid-column: 1;
+  grid-row: 2;
+}
+#troisUn{
+  grid-column: 1;
+  grid-row: 3;
+}
+#deuxDeux{
+  grid-column: 2;
+  grid-row: 2;
+}
+#troisDeux{
+  grid-column: 2;
+  grid-row: 3;
+}
+#deuxTrois{
+  grid-column: 3;
+  grid-row: 2;
+}
+#troisTrois{
+  grid-column: 3;
+  grid-row: 3;
+}
+#troisQuatre{
+  grid-column: 4;
+  grid-row: 3;
+}
+
+/* avis des utilisateurs */
+.avis{
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: minmax(0,auto);
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 4%;
+  grid-gap: 15px;
+}
+.un{
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.deux{
+  grid-column: 1;
+  grid-row: 2;
+}
+.trois{
+  grid-column: 2;
+  grid-row: 2;
+}
+.quatre{
+  grid-column: 3;
+  grid-row: 2;
+}
+.imageAvis{
+  width: 100%;
+  height:100%;
+  border-radius: 2px;
+}
+.avisUser{
+  font-size: 14px;
+  font-weight: 400 !important;
+}
+.user{
+  margin-top: 2%;
+}
+.userImage{
+  float: left;
+  position: relative;
+  padding-right: 20px;
+}
+.nameUser{
+  text-align:left;
+}
+
+/* option/assurances airbnb */
+.option{
+  grid-column: 1;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: minmax(0,auto);
+  margin-left: 17%;
+  margin-right: 17%;
+  grid-gap: 2%;
+}
+.unOp{
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.deuxOp{
+  grid-column: 1;
+  grid-row:2;
+}
+.troisOp{
+  grid-column: 2;
+  grid-row: 2;
+}
+.quatreOp{
+  grid-column: 3;
+  grid-row: 2;
+}
+.unOP h3{
+  font-size: 24px !important;
+  font-weight: 800 !important;
+}
+.titreOp{
+  margin-top: 5%;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+}
+.textOp{
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+/* Biens actuellement disponible */
+.live{
+  grid-column: 1;
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(0,auto);
+  margin-left: 17%;
+  margin-right: 17%;
+  grid-gap: 1%;
+}
+.unLi{
+  grid-column: 1/4;
+  grid-row: 1;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+}
+.deuxLi{
+  grid-column: 1;10px
+  grid-row: 2;
+}
+.troisLi{
+  grid-column: 2;
+  grid-row: 2;
+}
+.quatreLi{
+  grid-column: 3;
+  grid-row: 2;
+}
+.cinqueLi{
+  grid-column: 4;
+  grid-row: 2;
+}
+.sixLi{
+  grid-column: 1;
+  grid-row: 3;
+  margin-top: 10%;
+  font-size: 17px;
+  font-weight: 600 !important;
+}
+.sixLi a{
+  text-decoration: none;
+  padding: 7px 12px;
+  color: #008489;
+}
+.sixLi a:hover{
+  text-decoration: underline;;
+}
+.imageLi{
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.location{
+  color:#767676;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  font-size: 12px;
+  text-align: center;
+}
+.description{
+  margin-top: 2%;
+  font-size: 17px;
+  font-weight: 600 !important;
+}
+
+/* bouton fin de page */
+.date{
+  grid-column: 1;
+  grid-row: 5;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 3%;
+}
+.date button{
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 13px 30px;
+  text-align: center;
+  background-color: #008489;
+  color: white;
+  border: none;
+  margin-top: 1%;
+  margin-left: 1%;
+  font-weight: bold;
+
+}
+.date div{
+  font-size: 24px !important;
+  font-weight: 800 !important;
+}
+.date a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Footer */
+footer{
+  text-align: justify;
+  grid-column: 1;
+  grid-row: 6;
+  margin-top: 5%;
+}
+table{
+  width: 75%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 17%;
+  margin-right: 17%;
+  text-align: left;
+}
+.last{
+  margin-left: 17%;
+}

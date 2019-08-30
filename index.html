@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr-BE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Airbnb</title>
+    <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eedcf78d37.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <nav>
+      <a name="top"></a>
+      <a href="https://fr.airbnb.be/" target="_blank"><img id="imageHaut" src="images/airbnb.svg" alt=""></a>
+
+      <div class="header">
+        <h1>Réserver un séjour.Accueillez des voyageurs.Directement sur Airbnb.</h1>
+        <div class="flex">
+          <div class="bouton" >
+            <label>Trouvez des logements et des activités</label><br>
+            <button type="button" name="button" class="gauche">Explorer</button>
+          </div>
+
+          <div class="bouton" >
+            <label>Réservez un séjour</label><br>
+            <button type="button" name="button" class="droite">Accueillir</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Partie principale -->
+    <main>
+        <!-- Formulaire -->
+        <form action="index.html" method="post">
+            <div id="un">
+              <h3><bold>Réservez des logements et des expériences uniques</bold></h3>
+            </div>
+            <div id="deuxUn">
+              <h5><bolder>OÙ</bolder></h5>
+              <input type="text" name="place" placeholder="Partout">
+            </div>
+            <div id="deuxDeux">
+              <h5><bolder>ARRIVÉE-DÉPART</bolder></h5>
+              <input type="date" name="arivee" placeholder="jj/mm/aaaa" style="border-right:none;">-<input type="date" name="depart" placeholder="jj/mm/aaaa" style="border-left:none;">
+            </div>
+            <div id="deuxTrois">
+              <h5>VOYAGEURS</h5>
+              <input type="number" name="voyageurs" value="1 voyageur">
+              <button type="button" name="button">RECHERCHER</button>
+            </div>
+        </form>
+        <!-- Avis des utilisateurs -->
+        <div class="avis">
+          <div class="un">
+            <h3>Belgique : ce que les autres voyageurs ont pensé de leur logement</h3>
+            <p><i class="far fa-star"></i> Les logements de Belgique ont obtenu <bolder>4.6 étoiles sur 5</bolder> et plus de <bolder>950.000 commentaires</bolder></p>
+          </div>
+          <div class="deux">
+            <div>
+              <img class="imageAvis" src="images/interior1.jpg" alt="image d'intérieur">
+            </div>
+            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </span><br>
+            <span class="avisUser">
+              Appartement parfait, joliment décoré, impeccable, dans le quartier "qui bouge" à Bruxelles. Rapport qualité prix imbattable. Il ne ...
+            </span>
+            <div class="user">
+              <div class="userImage">
+                <i class="fas fa-user-alt fa-3x"></i>
+              </div>
+              <div class="nameUser">
+                <h4>Nom</h4>
+                <h5>Pays</h5>
+              </div>
+            </div>
+          </div>
+          <div class="trois">
+            <div>
+              <img class="imageAvis" src="images/interior2.jpg" alt="image d'intérieur">
+            </div>
+            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </span><br>
+            <span class="avisUser">
+              L'accueil par Kévin était vraiment très chaleureux L'appartement est très joli, bien décoré et très bien situé . Kévin nous a bien ...
+            </span>
+            <div class="user">
+              <div class="userImage">
+                <i class="fas fa-user-alt fa-3x"></i>
+              </div>
+              <div class="nameUser">
+                <h4>Nom </h4>
+                <h5>Pays</h5>
+              </div>
+            </div>
+          </div>
+          <div class="quatre">
+            <div>
+              <img class="imageAvis" src="images/interior3.jpg" alt="image d'intérieur">
+            </div>
+            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </span><br>
+            <span class="avisUser">
+              J'ai passé une nuit chez Greet à l'occasion des fameuses Fêtes de Gand. Celle-ci s'est montrée adorable; à la fois souriante, discrète ...
+            </span>
+            <div class="user">
+              <div class="userImage">
+                <i class="fas fa-user-alt fa-3x" style="border-radius: 50%;"></i>
+              </div>
+              <div class="nameUser">
+                <h4>Nom </h4>
+                <h5>Pays</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Option/Assurances airbnb -->
+        <div class="option">
+          <div class="unOp">
+            <h3>Voyager avec Airbnb</h3>
+            <hr style="color:lightgrey;opacity:0.2;">
+          </div>
+          <div class="deuxOp">
+            <div class="imageOp">
+              <i class="far fa-heart fa-3x"></i>
+            </div>
+            <div class="titreOp">
+              Assistance utilisateurs 24h/24
+            </div>
+            <div class="textOp">
+              Nous sommes là pour vous jour et nuit. Parlez à notre équipe d'assistance où que vous soyez et à toute heure.
+            </div>
+          </div>
+          <div class="troisOp">
+            <div class="imageOp">
+              <i class="fas fa-home fa-3x"></i>
+            </div>
+            <div class="titreOp">
+              Charte d'hospitalité générale
+            </div>
+            <div class="textOp">
+              Les voyageurs évaluent leurs hôtes après chaque voyage. Tous les hôtes doivent obtenir une évaluation minimale et se conformer à notre charte d'hospitalité pour rester sur Airbnb.
+            </div>
+          </div>
+          <div class="quatreOp">
+            <div class="imageOp">
+              <i class="fas fa-user-alt fa-3x"></i>
+            </div>
+            <div class="titreOp">
+              Hôtes 5 étoiles
+            </div>
+            <div class="textOp">
+              Entre les draps toujours frais et les meilleures recommandations du quartier, l'hospitalité est une seconde nature chez les hôtes Airbnb.
+            </div>
+          </div>
+
+        </div>
+
+        <hr style="color:lightgrey;opacity:0.3;margin-top:2%;margin-left:17%;margin-right:17%;margin-bottom:3%;">
+
+        <!-- Biens actuellement disponible -->
+        <div class="live">
+          <div class="unLi">
+            Réservé à l'instant à Belgique
+          </div>
+          <div class="deuxLi" >
+            <div>
+              <img class="imageLi" src="images/be1.jpg" alt="Lieux en Belgique">
+            </div>
+            <span class="location">MICROMAISON &#8226; OVERIJSE</span>
+            <div class="description">
+              Sarabande Genval jacuzzi lake
+            </div>
+            <span>€111/nuit</span><br>
+            <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>491 Superhost</span><br>
+          </div>
+          <div class="troisLi">
+            <div>
+              <img class="imageLi" src="images/be2.jpg" alt="Lieux en Belgique">
+            </div>
+            <span class="location">LOGEMENT ENTIER &#8226; IXELLES</span>
+            <div class="description">
+              Saint Boniface Rooftop
+            </div>
+            <span>€60/nuit</span><br>
+            <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>670 Superhost</span>
+          </div>
+          <div class="quatreLi">
+            <div>
+              <img class="imageLi" src="images/be3.jpg" alt="Lieux en Belgique">
+            </div>
+            <span class="location">LOGEMENT ENTIER &#8226; BRUXELLES</span>
+            <div class="description">
+              Voyez Bruxelles comme nous l'aimons !
+            </div>
+            <span>€5O/nuit</span><br>
+            <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>293</span>
+          </div>
+          <div class="cinqueLi">
+            <div>
+              <img class="imageLi" src="images/be4.jpg" alt="Lieux en Belgique">
+            </div>
+            <span class="location">BATEAU &#8226; NIEUWPOORT</span>
+            <div class="description">
+              HOMEBOAT Glamping La vie sur l'eau
+            </div>
+            <span>€15O/nuit</span><br>
+            <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>86 &bull; Superhost</span>
+          </div>
+          <div class="sixLi">
+            <a href="https://fr.airbnb.be/s/Belgium/homes?click_referer=t%3ASEE_ALL%7Csid%3A921517e2-0eef-452d-8ce4-1445e02b5904%7Cst%3ALANDING_PAGE_HOMES&title_type=LANDING_PAGE_HOMES&place_id=ChIJl5fz7WR9wUcR8g_mObTy60c&query=Belgium&refinement_paths%5B%5D=%2Fhomes" target="_blank">Afficher les (500+) ></a>
+          </div>
+        </div>
+        <!-- Bouton fin de page -->
+        <div class="date">
+          <div>Quand voyagez-vous?</div>
+          <span>Vérifiez la disponibilité et le prix en ajoutant des dates.</span><br>
+          <button type="button" name="button"><a href="#top">Ajouter des dates</a></button>
+        </div>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+      <hr style="color:lightgrey;opacity:0.2;">
+      <table>
+        <tr>
+          <th>Airbnb</th>
+          <th>Découvrir</th>
+          <th>Hébergement</th>
+          <th><i class="fab fa-facebook-f fa-s"></i>   <i class="fab fa-twitter fa-s"></i>     <i class="fab fa-instagram fa-s"></i></th>
+        </tr>
+        <tr>
+          <td>Carrières</td>
+          <td>Confiance et sécurité</td>
+          <td>Pourquoi être hôte</td>
+          <td>Condotions</td>
+        </tr>
+        <tr>
+          <td>Actualités</td>
+          <td>Crédito de Viagem</td>
+          <td>Hospitalité</td>
+          <td>Politique de confidentialité</td>
+        </tr>
+        <tr>
+          <td>Règles</td>
+          <td>Airbnb Citizen</td>
+          <td>Hébergement responsable</td>
+          <td>Plan du site</td>
+        </tr>
+        <tr>
+          <td>Aide</td>
+          <td>Voyage d'affaires</td>
+          <td>Community Center</td>
+        </tr>
+        <tr>
+          <td>Diversité et intégration</td>
+          <td>Guides</td>
+          <td>Organiser une experience</td>
+        </tr>
+        <tr>
+          <td>Coordonnées de l'entreprise</td>
+          <td>Airbnbmag</td>
+          <td>Open Homes</td>
+        </tr>
+      </table>
+      <hr style="color:lightgrey;opacity:0.3;margin-top:2%;margin-left:17%;margin-right:17%;margin-bottom:3%;">
+      <div class="last">
+        <i class="fab fa-airbnb"></i> © 2019 Airbnb, Inc. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

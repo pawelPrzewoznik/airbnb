@@ -1,5 +1,5 @@
 /* media query ne fonctionnant pas */
-@media only screen and (max-width:500px) {
+@media only screen and (min-width:300px) and (max-width:500px) {
   body {
     width: 480px;
   }
@@ -88,38 +88,49 @@ nav{
   margin-top: 5%;
   margin-bottom: 3%;
   color: white;
-  font-size: 25px;
   font-weight: bolder;
   grid-column: 1/2;
   grid-row: 1;
 }
+@media only screen and (min-width:992px) {
+  .header{
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    grid-column: 1/2;
+    grid-row: 1;
+  }
 
-.gauche{
-  grid-column: 1;
-  grid-row: 2;
-  padding:12px 145px;
-  text-align: center;
-  border-radius: 5px;
-  border:none;
-  font-weight: bold;
-  font-size: 16px;
-  margin:2%;
+  .gauche{
+    grid-column: 1;
+    grid-row: 2;
+    padding:12px 145px;
+    text-align: center;
+    border-radius: 5px;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+    margin:2%;
+  }
+  .droite{
+    grid-column: 2;
+    grid-row: 2;
+    padding:10px 145px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left :4%;
+    margin-top: 2%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
 }
-.droite{
-  grid-column: 2;
-  grid-row: 2;
-  padding:10px 145px;
-  text-align: center;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 16px;
-  margin-left :4%;
-  margin-top: 2%;
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-}
-
 .bouton{
   font-size: 16px;
 }
@@ -129,18 +140,19 @@ label{
 /* main body */
 
 /* formulaire */
-form{
-  grid-area: form;
-  grid-column: 1;
-  grid-row: 2;
-  margin-left: 17%;
-  margin-right: 17%;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: minmax(0 ,auto);
-  grid-row-gap: 0%;
+@media only screen and (min-width:992px) {
+  form{
+    grid-area: form;
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 17%;
+    margin-right: 17%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(0 ,auto);
+    grid-row-gap: 0%;
+  }
 }
-
 form h5{
   margin: 5px 10px 5px 0;
 }
@@ -193,19 +205,20 @@ form button{
 }
 
 /* avis des utilisateurs */
-.avis{
-  grid-column: 1;
-  grid-row: 3;
-  grid-area: avis;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: minmax(0,auto);
-  margin-left: 17%;
-  margin-right: 17%;
-  margin-top: 4%;
-  grid-gap: 15px;
+@media only screen and (min-width:992px){
+  .avis{
+    grid-column: 1;
+    grid-row: 3;
+    grid-area: avis;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(0,auto);
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 4%;
+    grid-gap: 15px;
+  }
 }
-
 .un{
   grid-column: 1/4;
   grid-row: 1;
@@ -286,18 +299,19 @@ form button{
 }
 
 /* Biens actuellement disponible */
-.live{
-  grid-column: 1;
-  grid-row: 5;
-  grid-area: live;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-auto-rows: minmax(0,auto);
-  margin-left: 17%;
-  margin-right: 17%;
-  grid-gap: 1%;
+@media only screen and (min-width:992px){
+  .live{
+    grid-column: 1;
+    grid-row: 5;
+    grid-area: live;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(0,auto);
+    margin-left: 17%;
+    margin-right: 17%;
+    grid-gap: 1%;
+  }
 }
-
 .unLi{
   grid-column: 1/4;
   grid-row: 1;
